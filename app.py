@@ -19,9 +19,9 @@ def predict_sentiment(text, location, hashtag1, hashtag2, hashtag3, country):
     if prediction == 0:
         prediction = 'Negativo'
     elif prediction == 1:
-        prediction = 'Positivo'
-    else:
         prediction = 'Neutral'
+    else:
+        prediction = 'Positivo'
     return prediction
 
 # Título y descripción de la aplicación
