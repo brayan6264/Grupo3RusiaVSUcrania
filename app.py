@@ -17,11 +17,11 @@ def predict_sentiment(text, location, hashtag1, hashtag2, hashtag3, country):
     })
     prediction = pipeline_cargado.predict(input_data)[0]
     if prediction == 0:
-        prediction = 'Negativo'
+        prediction = 'A favor de la guerra'
     elif prediction == 1:
-        prediction = 'Neutral'
+        prediction = 'Postura Neutral'
     else:
-        prediction = 'Positivo'
+        prediction = 'En contra de guerra'
     return prediction
 
 # Título y descripción de la aplicación
