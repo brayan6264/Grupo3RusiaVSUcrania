@@ -124,8 +124,7 @@ if st.button("Predecir Sentimiento"):
             st.error(f"Ocurrió un error al realizar la predicción: {e}")
     else:
         st.error("Por favor, completa todos los campos.")
-
-            st.write(f"Sentimiento: {sentiment}")
+        st.write(f"Sentimiento: {sentiment}")
         except Exception as e:
             st.error(f"Ocurrió un error al realizar la predicción: {e}")
     else:
